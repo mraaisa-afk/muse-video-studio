@@ -50,6 +50,13 @@ for f in examples/*/storyboard.json; do python3 skills/video-studio/scripts/lint
 - Scripts must run on Python 3.10+ and exit with meaningful codes: `0` ok, `1` findings, `2` bad input, `3` missing tool.
 - Comments explain *why*, not *what*.
 
+## Language policy
+
+- All documentation, code comments, commit messages, PR bodies, release notes and templates are written in English.
+- Non-English text appears only as example content in `examples/`, and is clearly marked as test data.
+- Rationale: the repository is public and contributor-facing.
+- Linguistic data shipped in code (for example stop-word lists and regex patterns) is stored as ASCII `\uXXXX` escapes rather than literal non-Latin characters, so source files stay ASCII-only while runtime behavior is unchanged.
+
 ## What will be declined
 
 - Prompt packs with no storyboard behind them.

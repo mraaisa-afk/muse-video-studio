@@ -8,6 +8,8 @@ Three complete storyboards, each passing its gate. Copy one and change the subje
 | [`bengali-tiktok/`](bengali-tiktok/) | TikTok | 16 s | Bengali | non-Latin script, 1:1 grid crop, 3-hashtag discipline |
 | [`product-ad/`](product-ad/) | Instagram Reels | 22 s | English | objection → demo → proof → offer, no dialogue in the demo |
 
+> **Note on `bengali-tiktok/`:** Non-English strings in this file are intentional test data, not repository documentation.
+
 ## Verify all three
 
 ```bash
