@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Renders and working files — never commit media
+*.mp4
+*.mov
+*.mkv
+*.wav
+*.mp3
+*.aac
+renders/
+clips/
+master*.mp4
+qc.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Local
+.env
+*.local
+scratch/
