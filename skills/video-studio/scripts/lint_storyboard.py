@@ -59,7 +59,7 @@ WPS = {
 
 STOPWORDS = {
     "en": "a an the and or but if so then than that this these those is am are was were be been being do does did have has had will would can could should may might must i you he she it we they me him her us them my your his its our their to of in on at for with by from up down out off over under again very just not no yes oh ah hey hi ok okay well now really all too as about into there here what which who when where why how one two got get".split(),
-    "bn": "এবং বা কিন্তু তার আর আমি তুমি সে এই ওই একটি একটা করে হয় ছিল না ও এর যে কি কী থেকে জন্য সাথে তার এই সেই আমি আমাদের তোমার মনে বলো এখন তবে যদি তখন অনেক খুব শুধু আরও এটা সেটা করে হয়েছিল হলো আছে নেই".split(),
+    "bn": "\u098f\u09ac\u0982 \u09ac\u09be \u0995\u09bf\u09a8\u09cd\u09a4\u09c1 \u09a4\u09be\u09b0 \u0986\u09b0 \u0986\u09ae\u09bf \u09a4\u09c1\u09ae\u09bf \u09b8\u09c7 \u098f\u0987 \u0993\u0987 \u098f\u0995\u099f\u09bf \u098f\u0995\u099f\u09be \u0995\u09b0\u09c7 \u09b9\u09af\u09bc \u099b\u09bf\u09b2 \u09a8\u09be \u0993 \u098f\u09b0 \u09af\u09c7 \u0995\u09bf \u0995\u09c0 \u09a5\u09c7\u0995\u09c7 \u099c\u09a8\u09cd\u09af \u09b8\u09be\u09a5\u09c7 \u09a4\u09be\u09b0 \u098f\u0987 \u09b8\u09c7\u0987 \u0986\u09ae\u09bf \u0986\u09ae\u09be\u09a6\u09c7\u09b0 \u09a4\u09cb\u09ae\u09be\u09b0 \u09ae\u09a8\u09c7 \u09ac\u09b2\u09cb \u098f\u0996\u09a8 \u09a4\u09ac\u09c7 \u09af\u09a6\u09bf \u09a4\u0996\u09a8 \u0985\u09a8\u09c7\u0995 \u0996\u09c1\u09ac \u09b6\u09c1\u09a7\u09c1 \u0986\u09b0\u0993 \u098f\u099f\u09be \u09b8\u09c7\u099f\u09be \u0995\u09b0\u09c7 \u09b9\u09af\u09bc\u09c7\u099b\u09bf\u09b2 \u09b9\u09b2\u09cb \u0986\u099b\u09c7 \u09a8\u09c7\u0987".split(),
     "default": "a an the and or but of to in on at for with by from is are was were be been this that it its i you he she we they".split(),
 }
 
@@ -69,14 +69,14 @@ AGREEMENT = [
     r"^(that'?s|that is) (right|true|correct)",
     r"^(you'?re|you are) right", r"^(i|we) agree", r"^of course[,!. ]",
     r"^(mm+|hm+|uh huh|indeed)\b",
-    r"^(হ্যাঁ|ঠিক|একদম|তাৎক্ষণিক)",
+    "^(\u09b9\u09cd\u09af\u09be\u0981|\u09a0\u09bf\u0995|\u098f\u0995\u09a6\u09ae|\u09a4\u09be\u09ce\u0995\u09cd\u09b7\u09a3\u09bf\u0995)",
 ]
 INTROS = [
     r"welcome back", r"welcome to", r"^hi (guys|kids|friends|everyone)",
     r"^hello (guys|kids|friends|everyone)", r"^hey (guys|kids|friends|everyone)",
     r"today we (will|are going to) (learn|talk|discuss)", r"in this video",
     r"let'?s (learn|start|begin|get started)", r"are you ready",
-    r"^(স্বাগতম|আজ আমরা|এই ভিডিওতে)",
+    "^(\u09b8\u09cd\u09ac\u09be\u0997\u09a4\u09ae|\u0986\u099c \u0986\u09ae\u09b0\u09be|\u098f\u0987 \u09ad\u09bf\u09a1\u09bf\u0993\u09a4\u09c7)",
 ]
 ENDCARDS = [r"end-card", r"endcard", r"title-card", r"outro-card", r"logo", r"static-end"]
 
