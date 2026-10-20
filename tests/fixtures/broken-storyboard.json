@@ -1,0 +1,191 @@
+{
+  "project": {
+    "id": "broken-as-shipped",
+    "title_working": "Why the pyramids were already ancient",
+    "content_type": "kids_edu",
+    "platform": "youtube_shorts",
+    "aspect": "9:16",
+    "language": "en",
+    "duration_target_s": 48,
+    "audience_age": "kids_0_8",
+    "goal": "education",
+    "requires_quiz": true,
+    "requires_loop": true,
+    "characters": [
+      "kira",
+      "ramesses",
+      "narrator"
+    ],
+    "brand": {
+      "palette": [
+        "#0E7C86",
+        "#E9C46A",
+        "#E4572E"
+      ],
+      "font": "one heavy sans",
+      "style_recipe": "3d-cartoon"
+    }
+  },
+  "analysis": {
+    "core_message": "",
+    "hook_chosen": "",
+    "structure": "",
+    "facts": [],
+    "assumptions": []
+  },
+  "beats": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 4.2,
+      "type": "hook",
+      "speaker": "narrator",
+      "text": "Hi kids! Welcome back to Fun Education TV!",
+      "shot": "channel-logo-title-card",
+      "camera": "static",
+      "transition": "cut"
+    },
+    {
+      "id": 2,
+      "start": 4.2,
+      "end": 7.4,
+      "type": "setup",
+      "speaker": "narrator",
+      "text": "Today we will learn about ancient Egypt.",
+      "shot": "wide-establishing",
+      "camera": "static",
+      "transition": "cut"
+    },
+    {
+      "id": 3,
+      "start": 9.2,
+      "end": 12.6,
+      "type": "broll",
+      "speaker": "",
+      "text": "",
+      "shot": "wide",
+      "camera": "static",
+      "transition": "cut"
+    },
+    {
+      "id": 4,
+      "start": 12.6,
+      "end": 16.6,
+      "type": "fact",
+      "speaker": "kira",
+      "text": "Ancient Egypt had amazing builders.",
+      "shot": "medium",
+      "camera": "static",
+      "transition": "cut"
+    },
+    {
+      "id": 5,
+      "start": 16.6,
+      "end": 19.0,
+      "type": "reaction",
+      "speaker": "ramesses",
+      "text": "Ancient Egypt had great builders.",
+      "shot": "medium",
+      "camera": "static",
+      "transition": "cut"
+    },
+    {
+      "id": 6,
+      "start": 19.0,
+      "end": 20.8,
+      "type": "reaction",
+      "speaker": "kira",
+      "text": "Yes, exactly! Great builders.",
+      "shot": "medium",
+      "camera": "static",
+      "transition": "cut"
+    },
+    {
+      "id": 7,
+      "start": 20.8,
+      "end": 22.3,
+      "type": "quiz",
+      "speaker": "kira",
+      "text": "Quick question. Did he build it?",
+      "shot": "side-profile-two-shot",
+      "camera": "static",
+      "on_screen": "",
+      "transition": "cut"
+    },
+    {
+      "id": 8,
+      "start": 22.3,
+      "end": 25.8,
+      "type": "reveal",
+      "speaker": "ramesses",
+      "text": "No, it was already ancient.",
+      "shot": "side-profile-two-shot",
+      "camera": "static",
+      "transition": "cut"
+    },
+    {
+      "id": 9,
+      "start": 25.8,
+      "end": 30.8,
+      "type": "broll",
+      "speaker": "narrator",
+      "text": "Abu Simbel was a temple Ramesses built himself.",
+      "shot": "wide",
+      "camera": "static",
+      "transition": "cut"
+    },
+    {
+      "id": 10,
+      "start": 30.8,
+      "end": 34.8,
+      "type": "cta",
+      "speaker": "kira",
+      "text": "Thank you for watching! Please like and subscribe!",
+      "shot": "medium-two-shot",
+      "camera": "static",
+      "transition": "cut"
+    },
+    {
+      "id": 11,
+      "start": 34.8,
+      "end": 48.0,
+      "type": "outro",
+      "speaker": "",
+      "text": "",
+      "shot": "static-end-card",
+      "camera": "locked-off",
+      "transition": "cut"
+    }
+  ],
+  "quiz": {
+    "start": 20.8,
+    "end": 22.3,
+    "question": "Did Ramesses build the Great Pyramid?",
+    "options": [],
+    "answer": "",
+    "countdown": false,
+    "layout": "side-profile-static"
+  },
+  "outro": {
+    "last_word_end": 34.8,
+    "video_end": 48.0,
+    "ends_on_question": false,
+    "loop_seam": false
+  },
+  "thumbnail": {
+    "file": "none.png",
+    "size": "1080x1920",
+    "text": "",
+    "subject": "",
+    "emotion": "",
+    "crop_safe": false
+  },
+  "publish": {
+    "title": "",
+    "primary_keyword": "kids learning videos",
+    "description_hook": "",
+    "tags": [],
+    "hashtags": [],
+    "pinned_comment": ""
+  }
+}

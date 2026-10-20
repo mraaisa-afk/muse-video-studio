@@ -1,0 +1,162 @@
+{
+  "project": {
+    "id": "ad-cold-bottle",
+    "title_working": "The bottle that survives a day in the sun",
+    "content_type": "product_ad",
+    "platform": "instagram_reels",
+    "aspect": "9:16",
+    "language": "en",
+    "duration_target_s": 22,
+    "audience_age": "general",
+    "goal": "conversion",
+    "requires_quiz": false,
+    "requires_loop": false,
+    "characters": [
+      "narrator"
+    ],
+    "brand": {
+      "palette": [
+        "#0B0B0C",
+        "#E8E6E1",
+        "#FF5A1F"
+      ],
+      "font": "one heavy grotesque",
+      "style_recipe": "product"
+    }
+  },
+  "analysis": {
+    "core_message": "Ice is still solid after 24 hours in direct sun, while a normal bottle is warm by lunchtime.",
+    "hook_chosen": "Every bottle sweats. This one does not.",
+    "structure": "objection-demo-proof-offer",
+    "facts": [
+      {
+        "claim": "Double-wall vacuum insulation keeps contents cold for up to 24 hours.",
+        "source": "Manufacturer specification sheet",
+        "verified": true
+      }
+    ],
+    "assumptions": [
+      "Product photography uses the brand's existing bottle; no redesign.",
+      "Price shown only if the user supplies it; otherwise the CTA is 'see colours'."
+    ]
+  },
+  "beats": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 2.4,
+      "type": "hook",
+      "speaker": "narrator",
+      "text": "Every bottle sweats. This one does not.",
+      "shot": "macro",
+      "camera": "push-in",
+      "on_screen": "ZERO SWEAT",
+      "transition": "cut"
+    },
+    {
+      "id": 2,
+      "start": 2.4,
+      "end": 5.0,
+      "type": "demo",
+      "speaker": "",
+      "text": "",
+      "shot": "macro",
+      "camera": "slow orbit",
+      "on_screen": "",
+      "transition": "match-cut"
+    },
+    {
+      "id": 3,
+      "start": 5.0,
+      "end": 8.4,
+      "type": "demo",
+      "speaker": "",
+      "text": "",
+      "shot": "medium",
+      "camera": "slider",
+      "on_screen": "POUR. SEAL. WAIT.",
+      "transition": "cut"
+    },
+    {
+      "id": 4,
+      "start": 8.4,
+      "end": 12.0,
+      "type": "broll",
+      "speaker": "",
+      "text": "",
+      "shot": "wide",
+      "camera": "locked-off",
+      "on_screen": "",
+      "transition": "cut"
+    },
+    {
+      "id": 5,
+      "start": 12.0,
+      "end": 15.6,
+      "type": "proof",
+      "speaker": "narrator",
+      "text": "Ice still solid after a full day in the sun.",
+      "shot": "macro",
+      "camera": "push-in",
+      "claim_source": "analysis.facts[0]",
+      "on_screen": "",
+      "transition": "cut"
+    },
+    {
+      "id": 6,
+      "start": 15.6,
+      "end": 19.2,
+      "type": "turn",
+      "speaker": "narrator",
+      "text": "Most bottles fail by lunchtime. This one does not.",
+      "shot": "medium-close",
+      "camera": "dolly-left",
+      "on_screen": "",
+      "transition": "cut"
+    },
+    {
+      "id": 7,
+      "start": 19.2,
+      "end": 21.6,
+      "type": "cta",
+      "speaker": "narrator",
+      "text": "Three colours. One tap. Pick yours.",
+      "shot": "hero",
+      "camera": "pull-back",
+      "on_screen": "THREE COLOURS",
+      "transition": "cut"
+    }
+  ],
+  "outro": {
+    "last_word_end": 21.6,
+    "video_end": 22.2,
+    "ends_on_question": false,
+    "loop_seam": false
+  },
+  "thumbnail": {
+    "file": "thumbnail_master.png",
+    "size": "1080x1920",
+    "text": "SURVIVES THE SUN",
+    "subject": "Bottle on hot concrete, ice visible through the cap, hard shadow",
+    "emotion": "confidence",
+    "crop_safe": true
+  },
+  "publish": {
+    "title": "Insulated bottle: cold for 24 hours, zero sweat",
+    "primary_keyword": "insulated bottle",
+    "description_hook": "One ice cube, one full day in the sun, one still-cold drink.",
+    "tags": [
+      "insulated bottle",
+      "water bottle",
+      "cold water",
+      "product review",
+      "everyday carry"
+    ],
+    "hashtags": [
+      "#bottle",
+      "#gear",
+      "#productdemo"
+    ],
+    "pinned_comment": "Which colour would you actually carry?"
+  }
+}
