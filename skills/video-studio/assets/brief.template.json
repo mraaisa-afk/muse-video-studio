@@ -1,0 +1,80 @@
+{
+  "project_id": "project-001",
+  "input_type": "topic | file | url | existing-video | product | story | data",
+  "input_ref": "",
+
+  "core_message": "One sentence under 20 words that a stranger could repeat.",
+  "audience": "A [specific person] who currently thinks [X] and needs to know [Y].",
+  "change_of_belief": "Before: ...  After: ...",
+
+  "format": {
+    "structure": "claim-proof-payoff | problem-3steps-result | setup-turn-consequence | objection-demo-proof-offer | A-vs-B-test-verdict | question-wrongbelief-correction-check | chart-why-action",
+    "platform": "youtube_shorts",
+    "aspect": "9:16",
+    "duration_target_s": 45,
+    "language": "en"
+  },
+
+  "key_points": [
+    "Point 1",
+    "Point 2",
+    "Point 3"
+  ],
+
+  "proof": [
+    {
+      "type": "number | demo | quote | before-after | source",
+      "value": "",
+      "on_screen": true
+    }
+  ],
+
+  "hook_angles": [
+    {
+      "type": "contradiction | number | stake | question | demonstration | confession | cold-open",
+      "line": "",
+      "visual": "",
+      "rank": 1
+    }
+  ],
+
+  "emotion": "curiosity | relief | delight | indignation | pride | suspense",
+
+  "cta": {
+    "action": "comment | follow | watch-part-2 | visit",
+    "line": "",
+    "question": "A question answerable in three words."
+  },
+
+  "risks": [
+    {
+      "type": "fact | rights | safety | policy | legal",
+      "detail": "",
+      "mitigation": ""
+    }
+  ],
+
+  "facts": [
+    {
+      "claim": "",
+      "source": "",
+      "verified": false
+    }
+  ],
+
+  "assumptions": [
+    "Filled in by the agent, correctable by the user."
+  ],
+
+  "style_recipe": "cinematic | documentary | product | ugc | 3d-cartoon | flat-vector | stop-motion | retro | neon-night | studio-white | editorial | anime | food-macro | motion-graphic",
+
+  "model_plan": {
+    "tool": "muse-builtin | veo-3.1 | sora | kling | seedance | runway",
+    "clip_limit_s": 8,
+    "audio_in_generation": false,
+    "continuity_method": "snapshot | last-frame | extension | none",
+    "segments_estimate": 6
+  },
+
+  "angle_statement": "This video argues that ____, for ____, using ____ as proof, ending with ____."
+}

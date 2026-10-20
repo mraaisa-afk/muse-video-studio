@@ -1,0 +1,255 @@
+{
+  "project": {
+    "id": "project-001",
+    "title_working": "Why the pyramids were already ancient",
+    "content_type": "kids_edu",
+    "platform": "youtube_shorts",
+    "aspect": "9:16",
+    "language": "en",
+    "duration_target_s": 49,
+    "audience_age": "kids_0_8",
+    "goal": "education",
+    "requires_quiz": true,
+    "requires_loop": true,
+    "characters": [
+      "kira",
+      "ramesses",
+      "narrator"
+    ],
+    "brand": {
+      "palette": [
+        "#0E7C86",
+        "#E9C46A",
+        "#E4572E"
+      ],
+      "font": "one heavy sans",
+      "style_recipe": "3d-cartoon"
+    }
+  },
+  "analysis": {
+    "core_message": "The Great Pyramid was already about 1,300 years old when Ramesses II was born, so he could not have built it.",
+    "hook_chosen": "Why did you build the pyramids?",
+    "structure": "question-wrongbelief-correction-check",
+    "facts": [
+      {
+        "claim": "Great Pyramid built c. 2560 BCE.",
+        "source": "Standard Egyptian chronology",
+        "verified": true
+      },
+      {
+        "claim": "Ramesses II reigned c. 1279-1213 BCE.",
+        "source": "Encyclopaedia entry",
+        "verified": true
+      }
+    ],
+    "assumptions": [
+      "Character designs follow the channel style bible."
+    ]
+  },
+  "beats": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 2.4,
+      "type": "hook",
+      "speaker": "kira",
+      "text": "Why did you build the pyramids?",
+      "shot": "extreme-close-up",
+      "camera": "snap push-in",
+      "transition": "cut"
+    },
+    {
+      "id": 2,
+      "start": 2.4,
+      "end": 6.4,
+      "type": "setup",
+      "speaker": "ramesses",
+      "text": "Build them? Oh no, little one. I didn't build them!",
+      "shot": "medium-close-up",
+      "camera": "locked-off",
+      "transition": "cut"
+    },
+    {
+      "id": 3,
+      "start": 6.4,
+      "end": 7.8,
+      "type": "reaction",
+      "speaker": "kira",
+      "text": "Wait... you didn't?",
+      "shot": "close-up",
+      "camera": "micro push-in",
+      "transition": "cut"
+    },
+    {
+      "id": 4,
+      "start": 7.8,
+      "end": 11.8,
+      "type": "broll",
+      "speaker": "narrator",
+      "text": "Look at Giza. Three giant pyramids, older than any book.",
+      "shot": "wide-low-angle",
+      "camera": "slow push-in",
+      "transition": "match-cut"
+    },
+    {
+      "id": 5,
+      "start": 11.8,
+      "end": 16.2,
+      "type": "proof",
+      "speaker": "ramesses",
+      "text": "When I was born, they were already two thousand years old.",
+      "shot": "medium",
+      "camera": "slow dolly left",
+      "claim_source": "analysis.facts[0]",
+      "transition": "cut"
+    },
+    {
+      "id": 6,
+      "start": 16.2,
+      "end": 20.6,
+      "type": "reaction",
+      "speaker": "kira",
+      "text": "Two thousand years? That's older than my grandma, times a hundred!",
+      "shot": "close-up",
+      "camera": "pull-back",
+      "transition": "cut"
+    },
+    {
+      "id": 7,
+      "start": 20.6,
+      "end": 23.8,
+      "type": "broll",
+      "speaker": "narrator",
+      "text": "Abu Simbel, the giant temple Ramesses built himself.",
+      "shot": "wide",
+      "camera": "tilt up",
+      "claim_source": "analysis.facts[1]",
+      "transition": "cut"
+    },
+    {
+      "id": 8,
+      "start": 23.8,
+      "end": 27.0,
+      "type": "turn",
+      "speaker": "ramesses",
+      "text": "I built temples. The pyramids were a mystery!",
+      "shot": "medium-close-up",
+      "camera": "punch-in",
+      "transition": "cut"
+    },
+    {
+      "id": 9,
+      "start": 27.0,
+      "end": 32.0,
+      "type": "quiz",
+      "speaker": "kira",
+      "text": "Quick question! Did Ramesses build the Great Pyramid?",
+      "shot": "full-screen-quiz-card",
+      "camera": "locked-off",
+      "on_screen": "Did Ramesses build it?  A) Yes  B) No  3-2-1",
+      "transition": "cut"
+    },
+    {
+      "id": 10,
+      "start": 32.0,
+      "end": 35.5,
+      "type": "reveal",
+      "speaker": "ramesses",
+      "text": "Not me!",
+      "shot": "quiz-card-answer",
+      "camera": "locked-off",
+      "on_screen": "B) No - correct!",
+      "transition": "cut"
+    },
+    {
+      "id": 11,
+      "start": 35.5,
+      "end": 39.5,
+      "type": "payoff",
+      "speaker": "narrator",
+      "text": "The Great Pyramid is four thousand five hundred years old.",
+      "shot": "wide",
+      "camera": "slow push-in",
+      "claim_source": "analysis.facts[0]",
+      "transition": "cut"
+    },
+    {
+      "id": 12,
+      "start": 39.5,
+      "end": 43.9,
+      "type": "payoff",
+      "speaker": "narrator",
+      "text": "That is one thousand three hundred years before Ramesses was born.",
+      "shot": "split-diagram",
+      "camera": "locked-off",
+      "claim_source": "analysis.facts[0]",
+      "transition": "cut"
+    },
+    {
+      "id": 13,
+      "start": 43.9,
+      "end": 47.9,
+      "type": "cta",
+      "speaker": "kira",
+      "text": "Who should we interview next? Tell me in the comments!",
+      "shot": "close-up",
+      "camera": "handheld drift",
+      "transition": "cut"
+    },
+    {
+      "id": 14,
+      "start": 47.9,
+      "end": 49.0,
+      "type": "loop",
+      "speaker": "",
+      "text": "",
+      "shot": "extreme-close-up",
+      "camera": "match-cut to first frame",
+      "transition": "loop"
+    }
+  ],
+  "quiz": {
+    "start": 27.0,
+    "end": 32.0,
+    "question": "Did Ramesses build the Great Pyramid?",
+    "options": [
+      "A) Yes",
+      "B) No"
+    ],
+    "answer": "B",
+    "countdown": true,
+    "layout": "full-screen-card"
+  },
+  "outro": {
+    "last_word_end": 47.9,
+    "video_end": 49.0,
+    "ends_on_question": true,
+    "loop_seam": true
+  },
+  "thumbnail": {
+    "file": "thumbnail_master.png",
+    "size": "2160x3840",
+    "text": "HE BUILT IT?!",
+    "subject": "Pharaoh face + kid with microphone, pyramid behind",
+    "emotion": "indignant surprise",
+    "crop_safe": true
+  },
+  "publish": {
+    "title": "Pharaoh Ramesses Interview | Ancient Egypt for Kids",
+    "primary_keyword": "ancient egypt for kids",
+    "description_hook": "Kids meet Pharaoh Ramesses and discover the pyramids were already ancient when he was born.",
+    "tags": [
+      "ancient egypt for kids",
+      "pharaoh for kids",
+      "history for kids",
+      "kid interview",
+      "learning video"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#AncientEgypt",
+      "#KidsLearning"
+    ],
+    "pinned_comment": "Who should we interview next? Tell us below!"
+  }
+}
