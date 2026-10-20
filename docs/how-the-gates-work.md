@@ -79,7 +79,7 @@ Two things are calibrated per language:
 
 ```
 $ python3 -c "..."
-['আপনি', 'প্রতিদিন', 'কত', 'মিনিট', 'হাঁটেন']    # 5 words, intact
+['apni', 'protidin', 'koto', 'minute', 'haten']    # 5 Bengali words, intact (romanized here; this documentation is English-only)
 ```
 
 CJK has no spaces, so its characters are estimated at roughly two per word.
