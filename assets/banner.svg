@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Muse Video Studio — topic in, publish-ready video out">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0B0F"/>
+      <stop offset="100%" stop-color="#171226"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7C5CFF"/>
+      <stop offset="55%" stop-color="#FF5A1F"/>
+      <stop offset="100%" stop-color="#E9C46A"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#FF5A1F" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <circle cx="1035" cy="60" r="220" fill="url(#glow)"/>
+  <circle cx="120" cy="300" r="160" fill="#7C5CFF" opacity="0.07"/>
+
+  <!-- mark: play triangle inside a frame, with a film-perf edge -->
+  <g transform="translate(72,96)">
+    <rect x="0" y="0" width="128" height="128" rx="26" fill="none" stroke="url(#accent)" stroke-width="3"/>
+    <rect x="10" y="10" width="12" height="12" rx="3" fill="#7C5CFF" opacity="0.85"/>
+    <rect x="10" y="106" width="12" height="12" rx="3" fill="#7C5CFF" opacity="0.85"/>
+    <rect x="106" y="10" width="12" height="12" rx="3" fill="#FF5A1F" opacity="0.85"/>
+    <rect x="106" y="106" width="12" height="12" rx="3" fill="#FF5A1F" opacity="0.85"/>
+    <path d="M52 40 L52 88 L92 64 Z" fill="url(#accent)"/>
+  </g>
+
+  <text x="236" y="146" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="62" font-weight="700" fill="#F7F5F2" letter-spacing="-1.2">Muse Video Studio</text>
+
+  <text x="238" y="192" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="25" font-weight="400" fill="#A9A4C2">Topic or file in. Brief, storyboard, video, thumbnail, publish pack out.</text>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17">
+    <rect x="238" y="222" width="112" height="34" rx="17" fill="#7C5CFF" opacity="0.16"/>
+    <text x="294" y="245" fill="#B7A6FF" text-anchor="middle">ANALYSE</text>
+    <rect x="360" y="222" width="112" height="34" rx="17" fill="#FF5A1F" opacity="0.14"/>
+    <text x="416" y="245" fill="#FF9A6E" text-anchor="middle">WRITE</text>
+    <rect x="482" y="222" width="130" height="34" rx="17" fill="#E9C46A" opacity="0.13"/>
+    <text x="547" y="245" fill="#E9C46A" text-anchor="middle">GENERATE</text>
+    <rect x="622" y="222" width="146" height="34" rx="17" fill="#7C5CFF" opacity="0.16"/>
+    <text x="695" y="245" fill="#B7A6FF" text-anchor="middle">THUMBNAIL</text>
+    <rect x="778" y="222" width="126" height="34" rx="17" fill="#FF5A1F" opacity="0.14"/>
+    <text x="841" y="245" fill="#FF9A6E" text-anchor="middle">PUBLISH</text>
+  </g>
+
+  <text x="238" y="288" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="15" fill="#6E6889">Any topic · any language · any platform · any model</text>
+</svg>

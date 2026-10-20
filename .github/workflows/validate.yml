@@ -1,0 +1,90 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: python ${{ matrix.python }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        python: ["3.10", "3.11", "3.12", "3.13"]
+        include:
+          - os: macos-latest
+            python: "3.12"
+          - os: windows-latest
+            python: "3.12"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Validate the skill package
+        run: python scripts/validate_skill.py
+
+      - name: Run the test suite
+        run: python tests/run_tests.py
+
+      - name: Lint every shipped example
+        shell: bash
+        run: |
+          set -e
+          for f in examples/*/storyboard.json; do
+            echo "::group::$f"
+            python skills/video-studio/scripts/lint_storyboard.py "$f"
+            echo "::endgroup::"
+          done
+
+      - name: Confirm the broken fixture still fails
+        shell: bash
+        run: |
+          if python skills/video-studio/scripts/lint_storyboard.py tests/fixtures/broken-storyboard.json; then
+            echo "::error::the broken fixture passed — a rule has regressed"
+            exit 1
+          else
+            echo "broken fixture correctly rejected"
+          fi
+
+  render-qc:
+    name: render QC smoke test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Build a synthetic clip with a static tail and a silence gap
+        run: |
+          ffmpeg -hide_banner -loglevel error -y \
+            -f lavfi -i "testsrc2=size=540x960:rate=30:duration=30" \
+            -f lavfi -i "color=c=red:size=540x960:rate=30:duration=6" \
+            -f lavfi -i "sine=frequency=300:sample_rate=44100:duration=20" \
+            -f lavfi -i "anullsrc=r=44100:cl=stereo:d=2" \
+            -f lavfi -i "sine=frequency=300:sample_rate=44100:duration=14" \
+            -filter_complex "[0:v][1:v]concat=n=2:v=1:a=0[v];[2:a][3:a][4:a]concat=n=3:v=0:a=1[a]" \
+            -map "[v]" -map "[a]" -c:v libx264 -preset ultrafast -pix_fmt yuv420p -c:a aac /tmp/qc-fixture.mp4
+
+      - name: QC must catch the freeze tail and the silence
+        shell: bash
+        run: |
+          set +e
+          out=$(python skills/video-studio/scripts/qc_video.py /tmp/qc-fixture.mp4 --platform youtube_shorts --no-scene)
+          rc=$?
+          echo "$out"
+          if [ $rc -eq 0 ]; then echo "::error::QC passed a known-bad file"; exit 1; fi
+          echo "$out" | grep -q "FREEZE-TAIL" || { echo "::error::freeze tail not detected"; exit 1; }
+          echo "$out" | grep -q "SILENCE"     || { echo "::error::silence not detected"; exit 1; }
+          echo "QC correctly rejected the fixture"

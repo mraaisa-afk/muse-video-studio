@@ -1,0 +1,40 @@
+name: Feature or preset request
+description: A new preset, platform profile, language calibration, or rule.
+title: "[feat] "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind
+      options:
+        - New preset (niche)
+        - New platform profile
+        - New language calibration
+        - New lint rule
+        - New reference document
+        - Tooling / CI
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: The failure it prevents
+      description: Describe a real video that failed this way, with a timestamp or a metric if you have one.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed check or rule
+      description: Threshold, reason, and the fix the agent should apply.
+    validations:
+      required: false
+  - type: checkboxes
+    id: willing
+    attributes:
+      label: Are you willing to contribute it?
+      options:
+        - label: Yes, with a fixture
+        - label: Yes, documentation only
+        - label: No, just suggesting
