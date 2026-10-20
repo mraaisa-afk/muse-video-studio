@@ -1,0 +1,43 @@
+name: Bug report
+description: A rule fires on a good video, or misses a bad one.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A rule that produces a false positive is worse than a rule that misses.
+        Please include the storyboard so the case can become a fixture.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: The finding text, verbatim, and the verdict.
+      placeholder: |
+        [FAIL] GAP  1.80s of dead air between beat 2 and beat 3
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: Why this is wrong — a real video that works despite the finding, or a bad one that slipped through.
+    validations:
+      required: true
+  - type: textarea
+    id: storyboard
+    attributes:
+      label: Minimal storyboard
+      description: Paste the smallest JSON that reproduces it.
+      render: json
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version / commit
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform profile
+      options: [youtube_shorts, youtube_long, tiktok, instagram_reels, facebook_reels, linkedin, x, other]

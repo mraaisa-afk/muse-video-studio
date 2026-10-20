@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Read the docs first
+    url: https://github.com/mraaisa-afk/muse-video-studio/blob/main/docs/quickstart.md
+    about: Install, first run, and how the gates work.
